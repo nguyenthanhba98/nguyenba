@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/phim1.css">
+
+</head>
+
+<body>
+    <div class="total">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;padding:0;">
+            <div class="container-fluid" style="background-color: black;padding:10px 20px 20px;">
+                <a class="navbar-brand" href="#"><img src="../img/xemphim.png" alt=""
+                        style="width: 112px;height: 38px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: #fff;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #ffff;">
+                                <i id="ba1" class="fas fa-search"></i>Tìm kiếm
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #ffff;">Phim lẻ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #ffff;">Phim bộ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #ffff;">Tất cả phim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #ffff;">FAQ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="background-color:#cf2122;color: #ffff;">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class="columns-title" style="display: flex;">
+                    <div class="columnstl">
+                        <label class="lable">Thể loại</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected id="selectone">- Tất cả -</option>
+                            <option value="1">Âm nhạc</option>
+                            <option value="2">Bí Ẩn</option>
+                            <option value="3">Chiến tranh</option>
+                            <option value="4">Chiến tranh & Chính trị</option>
+                            <option value="5">Chính kịch</option>
+                            <option value="6">Gia đình</option>
+                            <option value="7">Giật gân</option>
+                            <option value="8">Hài</option>
+                            <option value="9">Hành động</option>
+                            <option value="10">Hành động & Phiêu lưu</option>
+                            <option value="11">Hoạt hình</option>
+                            <option value="12">Kinh dị</option>
+                            <option value="13">Kỳ ảo</option>
+                            <option value="14">Lãng mạng</option>
+                            <option value="15">Lịch sử</option>
+                            <option value="16">Nói chuyện</option>
+                            <option value="17">Phiêu lưu</option>
+                            <option value="18">Phim dài kỳ</option>
+                            <option value="19">Tài liệu</option>
+                        </select>
+                    </div>
+                    <div class="columnstl">
+                        <label class="lable">Thể loại</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Tất cả -</option>
+                            <option value="1">Âm nhạc</option>
+                            <option value="2">Bí Ẩn</option>
+                            <option value="3">Chiến tranh</option>
+                            <option value="4">Chiến tranh & Chính trị</option>
+                            <option value="5">Chính kịch</option>
+                            <option value="6">Gia đình</option>
+                            <option value="7">Giật gân</option>
+                            <option value="8">Hài</option>
+                            <option value="9">Hành động</option>
+                            <option value="10">Hành động & Phiêu lưu</option>
+                            <option value="11">Hoạt hình</option>
+                            <option value="12">Kinh dị</option>
+                            <option value="13">Kỳ ảo</option>
+                            <option value="14">Lãng mạng</option>
+                            <option value="15">Lịch sử</option>
+                            <option value="16">Nói chuyện</option>
+                            <option value="17">Phiêu lưu</option>
+                            <option value="18">Phim dài kỳ</option>
+                            <option value="19">Tài liệu</option>
+                        </select>
+                    </div>
+                    <div class="columnstl">
+                        <label class="lable">Thể loại</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Tất cả -</option>
+                            <option value="1">Âm nhạc</option>
+                            <option value="2">Bí Ẩn</option>
+                            <option value="3">Chiến tranh</option>
+                            <option value="4">Chiến tranh & Chính trị</option>
+                            <option value="5">Chính kịch</option>
+                            <option value="6">Gia đình</option>
+                            <option value="7">Giật gân</option>
+                            <option value="8">Hài</option>
+                            <option value="9">Hành động</option>
+                            <option value="10">Hành động & Phiêu lưu</option>
+                            <option value="11">Hoạt hình</option>
+                            <option value="12">Kinh dị</option>
+                            <option value="13">Kỳ ảo</option>
+                            <option value="14">Lãng mạng</option>
+                            <option value="15">Lịch sử</option>
+                            <option value="16">Nói chuyện</option>
+                            <option value="17">Phiêu lưu</option>
+                            <option value="18">Phim dài kỳ</option>
+                            <option value="19">Tài liệu</option>
+                        </select>
+                    </div>
+                    <div class="columnstl">
+                        <div class="field">
+                            <label class="lable">Thể loại</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>- Tất cả -</option>
+                                <option value="1">Âm nhạc</option>
+                                <option value="2">Bí Ẩn</option>
+                                <option value="3">Chiến tranh</option>
+                                <option value="4">Chiến tranh & Chính trị</option>
+                                <option value="5">Chính kịch</option>
+                                <option value="6">Gia đình</option>
+                                <option value="7">Giật gân</option>
+                                <option value="8">Hài</option>
+                                <option value="9">Hành động</option>
+                                <option value="10">Hành động & Phiêu lưu</option>
+                                <option value="11">Hoạt hình</option>
+                                <option value="12">Kinh dị</option>
+                                <option value="13">Kỳ ảo</option>
+                                <option value="14">Lãng mạng</option>
+                                <option value="15">Lịch sử</option>
+                                <option value="16">Nói chuyện</option>
+                                <option value="17">Phiêu lưu</option>
+                                <option value="18">Phim dài kỳ</option>
+                                <option value="19">Tài liệu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="columnstl">
+                        <div class="field">
+
+                            <label class="lable">Thể loại</label> 
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>- Tất cả -</option>
+                                <option value="1">Âm nhạc</option>
+                                <option value="2">Bí Ẩn</option>
+                                <option value="3">Chiến tranh</option>
+                                <option value="4">Chiến tranh & Chính trị</option>
+                                <option value="5">Chính kịch</option>
+                                <option value="6">Gia đình</option>
+                                <option value="7">Giật gân</option>
+                                <option value="8">Hài</option>
+                                <option value="9">Hành động</option>
+                                <option value="10">Hành động & Phiêu lưu</option>
+                                <option value="11">Hoạt hình</option>
+                                <option value="12">Kinh dị</option>
+                                <option value="13">Kỳ ảo</option>
+                                <option value="14">Lãng mạng</option>
+                                <option value="15">Lịch sử</option>
+                                <option value="16">Nói chuyện</option>
+                                <option value="17">Phiêu lưu</option>
+                                <option value="18">Phim dài kỳ</option>
+                                <option value="19">Tài liệu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="title-1">
+                    <h2>
+                        <span>Phim đề cử</span>
+                    </h2>
+                </div>
+                <div class="gm12">
+                    <div class="row">
+                        <div class="list1">
+                            <img src="../img/phim.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/lupin~6667">Lupin</a></h3>
+                            <h3 class="nameen"><a href="/tv/lupin~6667">Lupin</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim1.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Trese:Người bảo vệ thành phố</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Trese</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim3.jpg" alt="">
+                            <h3 class="namevi"><a href="/movie/wish-dragon~12513">Ước nguyện thần long</a></h3>
+                            <h3 class="nameen"><a href="/movie/wish-dragon~12513">Wish Dragon</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim4.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Loki</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Loki</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim5.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Ám ảnh kinh hoàng:Ma xui quỷ khiến</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">The Conjuring: The Devil Made Me Do It</a>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="title-1">
+                    <div>
+                        <h2>
+                            <span>Phim lẻ mới cập nhập</span>
+                        </h2>
+                    </div>
+                    <div>
+                        <a href="">Xem tất cả
+                            <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="gm12">
+                    <div class="row">
+                        <div class="list1">
+                            <img src="../img/le.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/lupin~6667">Vô Cực</a></h3>
+                            <h3 class="nameen"><a href="/tv/lupin~6667">Infinite</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le1.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Khu rừng bi thảm</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Tragic Jungle</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le2.jpg" alt="">
+                            <h3 class="namevi"><a href="/movie/wish-dragon~12513">Thức giấc</a></h3>
+                            <h3 class="nameen"><a href="/movie/wish-dragon~12513">Awake</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le3.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Ký Ức</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Recalled</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le4.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Captain Sabertooth and the Magical
+                                    Diamond</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Captain Sabertooth and the Magical Di</a>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="gm12">
+                    <div class="row">
+                        <div class="list1">
+                            <img src="../img/le5.jpg" alt="" style="height: 342px;">
+                            <h3 class="namevi"><a href="/tv/lupin~6667">Ngôi đền kỳ quái 2</a></h3>
+                            <h3 class="nameen"><a href="/tv/lupin~6667">Pee Nak 2</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le6.jpg" alt="" style="height: 342px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Ánh Sáng Của Đom Đóm</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Have You Ever Seen Fireflies?</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le7.jpg" alt="" style="height: 342px;">
+                            <h3 class="namevi"><a href="/movie/wish-dragon~12513">Giấc Mơ Khiêu Vũ: Kẹp Hạt Dẻ
+                                    Sô-cô-la nóng</a></h3>
+                            <h3 class="nameen"><a href="/movie/wish-dragon~12513">
+                                    Dance Dreams: Hot Chocolate Nutcrac</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le8.jpg" alt="" style="height: 342px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Shawn Mendes: Trực Tiếp Tại Buổi Hòa
+                                    Nhạc</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Shawn Mendes: Live In Concert</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/le9.jpg" alt="" style="height: 342px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Bước Nhảy Vọt</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Duo Guan</a></h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="title-1">
+                    <div>
+                        <h2>
+                            <span>Phim bộ mới cập nhập</span>
+                        </h2>
+                    </div>
+                    <div>
+                        <a href="">Xem tất cả
+                            <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="gm12">
+                    <div class="row">
+                        <div class="list1">
+                            <img src="../img/phim.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/lupin~6667">Lupin</a></h3>
+                            <h3 class="nameen"><a href="/tv/lupin~6667">Lupin</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim1.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Trese:Người bảo vệ thành phố</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Trese</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim3.jpg" alt="">
+                            <h3 class="namevi"><a href="/movie/wish-dragon~12513">Ước nguyện thần long</a></h3>
+                            <h3 class="nameen"><a href="/movie/wish-dragon~12513">Wish Dragon</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim4.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Loki</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Loki</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/phim5.jpg" alt="">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Ám ảnh kinh hoàng:Ma xui quỷ khiến</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">The Conjuring: The Devil Made Me Do It</a>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="gm12">
+                    <div class="row">
+                        <div class="list1">
+                            <img src="../img/moi.jpg" alt=""style="height: 342.45px;">
+                            <h3 class="namevi"><a href="/tv/lupin~6667">Sweet Tooth: Cậu bé gạc nai</a></h3>
+                            <h3 class="nameen"><a href="/tv/lupin~6667">Sweet Tooth</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/moi2.jpg" alt=""style="height: 342.45px;">
+                            <h3 class="namevi"><a href="/movie/wish-dragon~12513">Hãy gọi cho Saul</a></h3>
+                            <h3 class="nameen"><a href="/movie/wish-dragon~12513">Better Call Saul</a></h3>
+
+                        </div>
+                        <div class="list1">
+                            <img src="../img/moi3.jpg" alt=""style="height: 342.45px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Chúa tể địa ngục</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Lucifer</a></h3>
+                        </div>
+                        <div class="list1">
+                            <img src="../img/moi4.jpg" alt=""style="height: 342.45px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Ragnarok: Hoàng hôn của chư thần</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Ragnarok</a></h3>
+
+                        </div>
+                        <div class="list1">
+                            <img src="../img/moi5.jpg" alt=""style="height: 342.45px;">
+                            <h3 class="namevi"><a href="/tv/loki~12272">Đêm lặng</a></h3>
+                            <h3 class="nameen"><a href="/tv/loki~12272">Dark</a></h3>
+                        </div>
+
+                    </div>
+                    <div class="seris" style="margin:40px 0;">
+                        <h3 class="seri" style="margin: 40px 0 10px;">Phim mới đăng(chờ xử lí)</h3>
+                        <div class="cum">
+                            <span>
+                                <a href="">The 8-year Engagement</a>
+                                (2017),
+                            </span>
+                            <span>
+                                <a href="">The Objective</a>
+                                (2008),
+                            </span>
+                            <span>
+                                <a href="">Sheena</a>
+                                (1984),
+                            </span>
+                            <span>
+                                <a href="">The Stolen Princess: Ruslan And Ludmila </a>
+                                (2018),
+                            </span>
+                            <span>
+                                <a href="">Heaven's Bookstore </a>
+                                (2004),
+                            </span>
+                            <span>
+                                <a href="">Sweepers</a>
+                                (1998),
+                            </span>
+                            <span>
+                                <a href="">The Little Witch </a>
+                                (2018),
+                            </span>
+                            <span>
+                                <a href="">Batman Vs. Two-face</a>
+                                (2017),
+                            </span>
+                            <span>
+                                <a href="">Gatao 2: Rise Of The King </a>
+                                (2018),
+                            </span>
+                            <span>
+                                <a href="">We're No Angels </a>
+                                (1955),
+                            </span>
+                            <span>
+                                <a href="">Red Dog: True Blue</a>
+                                (2016),
+                            </span>
+                            <span>
+                                <a href="">Bravo Two Zero</a>
+                                (1999),
+                            </span>
+                            <span>
+                                <a href="">Bleach </a>
+                                (2018),
+                            </span>
+                            <span>
+                                <a href="">Mr. Nice Guy</a>
+                                (1997),
+                            </span>
+                            <span>
+                                <a href="">Soldier</a>
+                                (1998)
+                            </span>
+                            <span>
+                                <a href="">On The Road To Berlin </a>
+                                (2015),
+                            </span>
+                            <span>
+                                <a href="">Grizzly Park </a>
+                                (2008),
+                            </span>
+                            <span>
+                                <a href="">The Princess And The Matchmaker</a>
+                                (2018),
+                            </span>
+                            <span>
+                                <a href="">Railroad Man</a>
+                                (1999)
+                            </span>
+                            <span>
+                                <a href="">After The Storm</a>
+                                (2016)
+                            </span>
+                        </div>
+                        <a href="" style="text-decoration: none;color: #fff;font-size: 11px;"><i
+                                class="fas fa-chevron-circle-right" style="color: #fff;"></i>Xem tất cả</a>
+                    </div>
+                </div>
+                <div class="footer-rumber">
+                    <div class="oke">
+                        <h7 class="phimkhac" style="color: #fff;">
+                            Phim chất lượng cao online của
+                            <a href="">Xem phim</a>
+                            khác gì so với các trang phim khác
+                        </h7>
+                    </div>
+                    <ul class="dz">
+                        <li>Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD (1080p), trong khi hầu hết
+                            các trang phim khác chỉ có tới độ phân giải HD (720p) là cao nhất</li>
+                        <li>Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10 lần phim online thông thường
+                            - đây là yếu tố quyết định độ nét của phim (thậm chí còn quan trọng hơn độ phân giải)</li>
+                        <li>Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang phim khác (kể cả Youtube)
+                        </li>
+                        <li>Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải cao</li>
+                        <li>Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề của riêng mình để xem
+                            online</li>
+                        <li>Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh & tiếng Việt), phù hợp với
+                            những người muốn học tiếng Anh qua phụ đề phim</li>
+                    </ul>
+                    <div class="lh" style="justify-content: space-between;display: flex;">
+                        <a href="" style="text-decoration: none;color: #428bca;">Liên hệ</a>
+                        <a href="" id="xp"><i class="fab fa-facebook-square"></i>
+                            XemPhim.Official
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    </div>
+</body>
+
+</html>
